@@ -91,7 +91,7 @@
             BtnNext.Enabled = True
             startdate = DTPStart.Value
             enddate = DTPEnd.Value
-            diff = DateDiff(DateInterval.Day, startdate, enddate)
+            diff = DateDiff(DateInterval.Day, startdate, enddate) + 1
             LblDays.Text = diff
         End If
     End Sub
@@ -240,8 +240,9 @@
         End If
     End Sub
 
-    Private Sub Mainform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DTPStart.MinDate = Today
+        DTPEnd.MinDate = Today
     End Sub
 
     Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles BtnCancel.Click

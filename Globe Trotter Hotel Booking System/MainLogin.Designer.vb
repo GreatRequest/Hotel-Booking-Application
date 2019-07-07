@@ -22,6 +22,7 @@ Partial Class MainLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainLogin))
         Me.LblTitle = New System.Windows.Forms.Label()
         Me.LineBlack = New System.Windows.Forms.Label()
@@ -47,6 +48,7 @@ Partial Class MainLogin
         Me.lblCNo = New System.Windows.Forms.Label()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.BtnHelp = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ExistingUser.SuspendLayout()
         Me.NEWUser.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,6 +141,7 @@ Partial Class MainLogin
         Me.BtnCancel.Size = New System.Drawing.Size(75, 23)
         Me.BtnCancel.TabIndex = 7
         Me.BtnCancel.Text = "Cancel"
+        Me.ToolTip1.SetToolTip(Me.BtnCancel, "This will close this application")
         Me.BtnCancel.UseVisualStyleBackColor = False
         '
         'BtnLogin
@@ -155,6 +158,7 @@ Partial Class MainLogin
         Me.BtnLogin.Size = New System.Drawing.Size(75, 23)
         Me.BtnLogin.TabIndex = 6
         Me.BtnLogin.Text = "Log In"
+        Me.ToolTip1.SetToolTip(Me.BtnLogin, "click here to login")
         Me.BtnLogin.UseVisualStyleBackColor = False
         '
         'BtnRegister
@@ -171,6 +175,7 @@ Partial Class MainLogin
         Me.BtnRegister.Size = New System.Drawing.Size(75, 23)
         Me.BtnRegister.TabIndex = 7
         Me.BtnRegister.Text = "Register"
+        Me.ToolTip1.SetToolTip(Me.BtnRegister, "Click here to register.")
         Me.BtnRegister.UseVisualStyleBackColor = False
         '
         'TxtUsername
@@ -211,6 +216,8 @@ Partial Class MainLogin
         Me.ExistingUser.TabIndex = 16
         Me.ExistingUser.TabStop = False
         Me.ExistingUser.Text = "Existing User"
+        Me.ToolTip1.SetToolTip(Me.ExistingUser, "If you are an existing user please use your Username and Password that you create" &
+        "d with us earlier.")
         '
         'NEWUser
         '
@@ -227,6 +234,8 @@ Partial Class MainLogin
         Me.NEWUser.TabIndex = 17
         Me.NEWUser.TabStop = False
         Me.NEWUser.Text = "New User"
+        Me.ToolTip1.SetToolTip(Me.NEWUser, "If you would like to make an account with us please enter you're preferred:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "User" &
+        "name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Password" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and confirm password you typed in earlier")
         '
         'LblNEWRePassword
         '
@@ -243,6 +252,7 @@ Partial Class MainLogin
         Me.TxtNEWRePassword.Name = "TxtNEWRePassword"
         Me.TxtNEWRePassword.Size = New System.Drawing.Size(154, 20)
         Me.TxtNEWRePassword.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.TxtNEWRePassword, "Please re-enter your password again.")
         Me.TxtNEWRePassword.UseSystemPasswordChar = True
         '
         'LblNEWUsername
@@ -269,6 +279,7 @@ Partial Class MainLogin
         Me.TxtNEWPassword.Name = "TxtNEWPassword"
         Me.TxtNEWPassword.Size = New System.Drawing.Size(154, 20)
         Me.TxtNEWPassword.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.TxtNEWPassword, "Password must be at least 8 characters long.")
         Me.TxtNEWPassword.UseSystemPasswordChar = True
         '
         'TxtNEWUsername
@@ -277,6 +288,7 @@ Partial Class MainLogin
         Me.TxtNEWUsername.Name = "TxtNEWUsername"
         Me.TxtNEWUsername.Size = New System.Drawing.Size(154, 20)
         Me.TxtNEWUsername.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.TxtNEWUsername, "Username must be at least 5 characters long.")
         '
         'lblCNo
         '
@@ -333,7 +345,15 @@ Partial Class MainLogin
         Me.BtnHelp.Size = New System.Drawing.Size(75, 23)
         Me.BtnHelp.TabIndex = 19
         Me.BtnHelp.Text = "Help"
+        Me.ToolTip1.SetToolTip(Me.BtnHelp, "If you have any difficulty compleating this stage of identity verification please" &
+        ", click on this button.")
         Me.BtnHelp.UseVisualStyleBackColor = False
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.AutoPopDelay = 0
+        Me.ToolTip1.InitialDelay = 500
+        Me.ToolTip1.ReshowDelay = 100
         '
         'MainLogin
         '
@@ -388,4 +408,5 @@ Partial Class MainLogin
     Friend WithEvents lblCNo As Label
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents BtnHelp As Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

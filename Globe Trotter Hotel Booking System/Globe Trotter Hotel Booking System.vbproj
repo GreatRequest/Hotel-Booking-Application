@@ -68,9 +68,11 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -93,12 +95,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="I:\Project 1.1\Country Choice.Designer.vb">
+    <Compile Include="Country Choice.Designer.vb">
       <DependentUpon>Country Choice.vb</DependentUpon>
-      <Link>Country Choice.Designer.vb</Link>
     </Compile>
-    <Compile Include="I:\Project 1.1\Country Choice.vb">
-      <Link>Country Choice.vb</Link>
+    <Compile Include="Country Choice.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainLogin.vb">
       <SubType>Form</SubType>
@@ -142,9 +143,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="I:\Project 1.1\Country Choice.resx">
+    <EmbeddedResource Include="Country Choice.resx">
       <DependentUpon>Country Choice.vb</DependentUpon>
-      <Link>Country Choice.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="MainLogin.resx">
       <DependentUpon>MainLogin.vb</DependentUpon>
@@ -166,7 +166,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="My Project\app.manifest" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

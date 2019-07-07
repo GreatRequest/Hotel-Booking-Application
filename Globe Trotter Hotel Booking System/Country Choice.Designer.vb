@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Country_Choice
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Country_Choice
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Country_Choice))
         Me.RadBtnMadrid = New System.Windows.Forms.RadioButton()
         Me.ChkBxSpain = New System.Windows.Forms.CheckBox()
@@ -70,6 +71,7 @@ Partial Class Country_Choice
         Me.BtnCancel = New System.Windows.Forms.Button()
         Me.BtnNext = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -92,6 +94,7 @@ Partial Class Country_Choice
         Me.RadBtnMadrid.TabIndex = 2
         Me.RadBtnMadrid.TabStop = True
         Me.RadBtnMadrid.Text = "Madrid"
+        Me.ToolTip1.SetToolTip(Me.RadBtnMadrid, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnMadrid.UseVisualStyleBackColor = True
         '
         'ChkBxSpain
@@ -105,6 +108,7 @@ Partial Class Country_Choice
         Me.ChkBxSpain.Size = New System.Drawing.Size(63, 19)
         Me.ChkBxSpain.TabIndex = 1
         Me.ChkBxSpain.Text = "Spain"
+        Me.ToolTip1.SetToolTip(Me.ChkBxSpain, "Choose this country and then the city.")
         Me.ChkBxSpain.UseVisualStyleBackColor = True
         '
         'RadBtnLondon
@@ -118,6 +122,7 @@ Partial Class Country_Choice
         Me.RadBtnLondon.TabIndex = 14
         Me.RadBtnLondon.TabStop = True
         Me.RadBtnLondon.Text = "London"
+        Me.ToolTip1.SetToolTip(Me.RadBtnLondon, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnLondon.UseVisualStyleBackColor = True
         '
         'RadBtnBerlin
@@ -131,6 +136,7 @@ Partial Class Country_Choice
         Me.RadBtnBerlin.TabIndex = 10
         Me.RadBtnBerlin.TabStop = True
         Me.RadBtnBerlin.Text = "Berlin"
+        Me.ToolTip1.SetToolTip(Me.RadBtnBerlin, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnBerlin.UseVisualStyleBackColor = True
         '
         'RadBtnRome
@@ -144,6 +150,7 @@ Partial Class Country_Choice
         Me.RadBtnRome.TabIndex = 6
         Me.RadBtnRome.TabStop = True
         Me.RadBtnRome.Text = "Rome"
+        Me.ToolTip1.SetToolTip(Me.RadBtnRome, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnRome.UseVisualStyleBackColor = True
         '
         'SplitContainer1
@@ -418,6 +425,7 @@ Partial Class Country_Choice
         Me.ChkBx5Star.Size = New System.Drawing.Size(171, 19)
         Me.ChkBx5Star.TabIndex = 19
         Me.ChkBx5Star.Text = "5 star + £270 per night"
+        Me.ToolTip1.SetToolTip(Me.ChkBx5Star, "Choose this Hotel Star Rating and then click on next.")
         Me.ChkBx5Star.UseVisualStyleBackColor = False
         '
         'ChkBx4Star
@@ -433,6 +441,7 @@ Partial Class Country_Choice
         Me.ChkBx4Star.Size = New System.Drawing.Size(171, 19)
         Me.ChkBx4Star.TabIndex = 18
         Me.ChkBx4Star.Text = "4 star + £200 per night"
+        Me.ToolTip1.SetToolTip(Me.ChkBx4Star, "Choose this Hotel Star Rating and then click on next.")
         Me.ChkBx4Star.UseVisualStyleBackColor = False
         '
         'ChkBx3Star
@@ -448,6 +457,7 @@ Partial Class Country_Choice
         Me.ChkBx3Star.Size = New System.Drawing.Size(171, 19)
         Me.ChkBx3Star.TabIndex = 17
         Me.ChkBx3Star.Text = "3 star + £130 per night"
+        Me.ToolTip1.SetToolTip(Me.ChkBx3Star, "Choose this Hotel Star Rating and then click on next.")
         Me.ChkBx3Star.UseVisualStyleBackColor = False
         '
         'RadBtnVenice
@@ -461,6 +471,7 @@ Partial Class Country_Choice
         Me.RadBtnVenice.TabIndex = 8
         Me.RadBtnVenice.TabStop = True
         Me.RadBtnVenice.Text = "Venice"
+        Me.ToolTip1.SetToolTip(Me.RadBtnVenice, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnVenice.UseVisualStyleBackColor = True
         '
         'RadBtnDusseldorf
@@ -474,6 +485,7 @@ Partial Class Country_Choice
         Me.RadBtnDusseldorf.TabIndex = 12
         Me.RadBtnDusseldorf.TabStop = True
         Me.RadBtnDusseldorf.Text = "Dusseldorf"
+        Me.ToolTip1.SetToolTip(Me.RadBtnDusseldorf, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnDusseldorf.UseVisualStyleBackColor = True
         '
         'RadBtnBirmingham
@@ -487,6 +499,7 @@ Partial Class Country_Choice
         Me.RadBtnBirmingham.TabIndex = 16
         Me.RadBtnBirmingham.TabStop = True
         Me.RadBtnBirmingham.Text = "Birmingham"
+        Me.ToolTip1.SetToolTip(Me.RadBtnBirmingham, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnBirmingham.UseVisualStyleBackColor = True
         '
         'RadBtnValencia
@@ -500,6 +513,7 @@ Partial Class Country_Choice
         Me.RadBtnValencia.TabIndex = 4
         Me.RadBtnValencia.TabStop = True
         Me.RadBtnValencia.Text = "Valencia"
+        Me.ToolTip1.SetToolTip(Me.RadBtnValencia, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnValencia.UseVisualStyleBackColor = True
         '
         'ChkBxEngland
@@ -513,6 +527,7 @@ Partial Class Country_Choice
         Me.ChkBxEngland.Size = New System.Drawing.Size(79, 19)
         Me.ChkBxEngland.TabIndex = 13
         Me.ChkBxEngland.Text = "England"
+        Me.ToolTip1.SetToolTip(Me.ChkBxEngland, "Choose this country and then the city.")
         Me.ChkBxEngland.UseVisualStyleBackColor = True
         '
         'ChkBxGermany
@@ -526,6 +541,7 @@ Partial Class Country_Choice
         Me.ChkBxGermany.Size = New System.Drawing.Size(83, 19)
         Me.ChkBxGermany.TabIndex = 9
         Me.ChkBxGermany.Text = "Germany"
+        Me.ToolTip1.SetToolTip(Me.ChkBxGermany, "Choose this country and then the city.")
         Me.ChkBxGermany.UseVisualStyleBackColor = True
         '
         'ChkBxItaly
@@ -539,6 +555,7 @@ Partial Class Country_Choice
         Me.ChkBxItaly.Size = New System.Drawing.Size(52, 19)
         Me.ChkBxItaly.TabIndex = 5
         Me.ChkBxItaly.Text = "Italy"
+        Me.ToolTip1.SetToolTip(Me.ChkBxItaly, "Choose this country and then the city.")
         Me.ChkBxItaly.UseVisualStyleBackColor = True
         '
         'RadBtnPisa
@@ -552,6 +569,7 @@ Partial Class Country_Choice
         Me.RadBtnPisa.TabIndex = 7
         Me.RadBtnPisa.TabStop = True
         Me.RadBtnPisa.Text = "Pisa"
+        Me.ToolTip1.SetToolTip(Me.RadBtnPisa, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnPisa.UseVisualStyleBackColor = True
         '
         'RadBtnHamburg
@@ -565,6 +583,7 @@ Partial Class Country_Choice
         Me.RadBtnHamburg.TabIndex = 11
         Me.RadBtnHamburg.TabStop = True
         Me.RadBtnHamburg.Text = "Hamburg"
+        Me.ToolTip1.SetToolTip(Me.RadBtnHamburg, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnHamburg.UseVisualStyleBackColor = True
         '
         'RadBtnManchester
@@ -578,6 +597,7 @@ Partial Class Country_Choice
         Me.RadBtnManchester.TabIndex = 15
         Me.RadBtnManchester.TabStop = True
         Me.RadBtnManchester.Text = "Manchester"
+        Me.ToolTip1.SetToolTip(Me.RadBtnManchester, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnManchester.UseVisualStyleBackColor = True
         '
         'RadBtnBarcelona
@@ -591,6 +611,7 @@ Partial Class Country_Choice
         Me.RadBtnBarcelona.TabIndex = 3
         Me.RadBtnBarcelona.TabStop = True
         Me.RadBtnBarcelona.Text = "Barcelona"
+        Me.ToolTip1.SetToolTip(Me.RadBtnBarcelona, "Choose this City and then the Hotel Star Rating.")
         Me.RadBtnBarcelona.UseVisualStyleBackColor = True
         '
         'LblTitle
@@ -641,6 +662,8 @@ Partial Class Country_Choice
         Me.BtnBack.Size = New System.Drawing.Size(75, 23)
         Me.BtnBack.TabIndex = 21
         Me.BtnBack.Text = "Back"
+        Me.ToolTip1.SetToolTip(Me.BtnBack, "If you wish to change anything in the previous window please click here. You will" &
+        " still be able to come back to it.")
         Me.BtnBack.UseVisualStyleBackColor = False
         '
         'BtnCancel
@@ -652,6 +675,7 @@ Partial Class Country_Choice
         Me.BtnCancel.Size = New System.Drawing.Size(75, 23)
         Me.BtnCancel.TabIndex = 22
         Me.BtnCancel.Text = "Cancel"
+        Me.ToolTip1.SetToolTip(Me.BtnCancel, "If you click cancel now all of the unsaved information will be lost.")
         Me.BtnCancel.UseVisualStyleBackColor = False
         '
         'BtnNext
@@ -664,6 +688,7 @@ Partial Class Country_Choice
         Me.BtnNext.Size = New System.Drawing.Size(75, 23)
         Me.BtnNext.TabIndex = 520
         Me.BtnNext.Text = "Next"
+        Me.ToolTip1.SetToolTip(Me.BtnNext, "Click Next to proceed.")
         Me.BtnNext.UseVisualStyleBackColor = False
         '
         'Label5
@@ -675,6 +700,12 @@ Partial Class Country_Choice
         Me.Label5.TabIndex = 34
         Me.Label5.Text = "You will be able to change the information if needed. Click ""Back"" if you need to" &
     " do so."
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.AutoPopDelay = 0
+        Me.ToolTip1.InitialDelay = 500
+        Me.ToolTip1.ReshowDelay = 100
         '
         'Country_Choice
         '
@@ -755,4 +786,5 @@ Partial Class Country_Choice
     Friend WithEvents ChkBxEngland As CheckBox
     Friend WithEvents ChkBxGermany As CheckBox
     Friend WithEvents ChkBxItaly As CheckBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

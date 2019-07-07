@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Globe_Troter_Booking_System")>
-<Assembly: AssemblyDescription("L3 course work by Rihards Simanovics 70116914")>
+<Assembly: AssemblyDescription("L3 course Software Engineering work by Rihards Simanovics 70116914")>
 <Assembly: AssemblyCompany("Great Request")>
-<Assembly: AssemblyProduct("Globe Troter Booking System")>
+<Assembly: AssemblyProduct("Globe Troter Hotel Booking System")>
 <Assembly: AssemblyCopyright("Copyright ©  2017 Great Request All rights reserved")>
 <Assembly: AssemblyTrademark("Ltd")>
 
@@ -32,6 +32,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.1.0.0")>
-<Assembly: AssemblyFileVersion("1.1.0.0")>
+<Assembly: AssemblyVersion("1.1.18.15")>
+<Assembly: AssemblyFileVersion("1.1.18.15")>
 <Assembly: NeutralResourcesLanguage("en-GB")>

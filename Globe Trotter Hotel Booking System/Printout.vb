@@ -7,7 +7,7 @@
 
         ' If the result is OK then print the document.
         If (result = DialogResult.OK) Then
-            PrintForm.Print()
+            PrintForm1.Print()
         End If
     End Sub
 End Class

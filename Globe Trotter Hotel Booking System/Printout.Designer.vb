@@ -22,6 +22,7 @@ Partial Class Printout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Printout))
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label34 = New System.Windows.Forms.Label()
@@ -107,6 +108,9 @@ Partial Class Printout
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtnPrint = New System.Windows.Forms.Button()
         Me.PrintDialogPrintoutForm = New System.Windows.Forms.PrintDialog()
+        Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TableLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -125,7 +129,7 @@ Partial Class Printout
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.1635!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.8365!))
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Label34, 0, 8)
         Me.TableLayoutPanel7.Controls.Add(Me.lblStars, 3, 2)
         Me.TableLayoutPanel7.Controls.Add(Me.Label6, 2, 2)
@@ -171,7 +175,7 @@ Partial Class Printout
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label34.Location = New System.Drawing.Point(26, 112)
+        Me.Label34.Location = New System.Drawing.Point(25, 112)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(84, 13)
         Me.Label34.TabIndex = 79
@@ -183,7 +187,7 @@ Partial Class Printout
         Me.lblStars.AutoSize = True
         Me.lblStars.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblStars.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblStars.Location = New System.Drawing.Point(446, 32)
+        Me.lblStars.Location = New System.Drawing.Point(443, 32)
         Me.lblStars.Name = "lblStars"
         Me.lblStars.Size = New System.Drawing.Size(13, 11)
         Me.lblStars.TabIndex = 78
@@ -195,7 +199,7 @@ Partial Class Printout
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(386, 32)
+        Me.Label6.Location = New System.Drawing.Point(383, 32)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(54, 11)
         Me.Label6.TabIndex = 77
@@ -207,7 +211,7 @@ Partial Class Printout
         Me.LblDisCity.AutoSize = True
         Me.LblDisCity.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDisCity.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblDisCity.Location = New System.Drawing.Point(446, 17)
+        Me.LblDisCity.Location = New System.Drawing.Point(443, 17)
         Me.LblDisCity.Name = "LblDisCity"
         Me.LblDisCity.Size = New System.Drawing.Size(13, 14)
         Me.LblDisCity.TabIndex = 76
@@ -219,7 +223,7 @@ Partial Class Printout
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label26.Location = New System.Drawing.Point(346, 17)
+        Me.Label26.Location = New System.Drawing.Point(343, 17)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(94, 13)
         Me.Label26.TabIndex = 75
@@ -231,7 +235,7 @@ Partial Class Printout
         Me.LblDisCountry.AutoSize = True
         Me.LblDisCountry.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDisCountry.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblDisCountry.Location = New System.Drawing.Point(446, 1)
+        Me.LblDisCountry.Location = New System.Drawing.Point(443, 1)
         Me.LblDisCountry.Name = "LblDisCountry"
         Me.LblDisCountry.Size = New System.Drawing.Size(13, 14)
         Me.LblDisCountry.TabIndex = 74
@@ -243,7 +247,7 @@ Partial Class Printout
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label24.Location = New System.Drawing.Point(329, 1)
+        Me.Label24.Location = New System.Drawing.Point(326, 1)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(111, 13)
         Me.Label24.TabIndex = 57
@@ -255,7 +259,7 @@ Partial Class Printout
         Me.TxtEmail.AutoSize = True
         Me.TxtEmail.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtEmail.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtEmail.Location = New System.Drawing.Point(116, 112)
+        Me.TxtEmail.Location = New System.Drawing.Point(115, 112)
         Me.TxtEmail.Name = "TxtEmail"
         Me.TxtEmail.Size = New System.Drawing.Size(13, 13)
         Me.TxtEmail.TabIndex = 73
@@ -267,7 +271,7 @@ Partial Class Printout
         Me.TxtPhoneNo.AutoSize = True
         Me.TxtPhoneNo.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPhoneNo.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtPhoneNo.Location = New System.Drawing.Point(116, 98)
+        Me.TxtPhoneNo.Location = New System.Drawing.Point(115, 98)
         Me.TxtPhoneNo.Name = "TxtPhoneNo"
         Me.TxtPhoneNo.Size = New System.Drawing.Size(13, 14)
         Me.TxtPhoneNo.TabIndex = 71
@@ -279,7 +283,7 @@ Partial Class Printout
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label20.Location = New System.Drawing.Point(30, 98)
+        Me.Label20.Location = New System.Drawing.Point(29, 98)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(80, 13)
         Me.Label20.TabIndex = 70
@@ -291,7 +295,7 @@ Partial Class Printout
         Me.TxtPostecode.AutoSize = True
         Me.TxtPostecode.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPostecode.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtPostecode.Location = New System.Drawing.Point(116, 83)
+        Me.TxtPostecode.Location = New System.Drawing.Point(115, 83)
         Me.TxtPostecode.Name = "TxtPostecode"
         Me.TxtPostecode.Size = New System.Drawing.Size(13, 14)
         Me.TxtPostecode.TabIndex = 69
@@ -303,7 +307,7 @@ Partial Class Printout
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label18.Location = New System.Drawing.Point(58, 84)
+        Me.Label18.Location = New System.Drawing.Point(57, 84)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(52, 13)
         Me.Label18.TabIndex = 68
@@ -315,7 +319,7 @@ Partial Class Printout
         Me.TxtCountry.AutoSize = True
         Me.TxtCountry.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCountry.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtCountry.Location = New System.Drawing.Point(116, 69)
+        Me.TxtCountry.Location = New System.Drawing.Point(115, 69)
         Me.TxtCountry.Name = "TxtCountry"
         Me.TxtCountry.Size = New System.Drawing.Size(13, 14)
         Me.TxtCountry.TabIndex = 67
@@ -327,7 +331,7 @@ Partial Class Printout
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label16.Location = New System.Drawing.Point(59, 69)
+        Me.Label16.Location = New System.Drawing.Point(58, 69)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(51, 13)
         Me.Label16.TabIndex = 66
@@ -339,7 +343,7 @@ Partial Class Printout
         Me.TxtCounty.AutoSize = True
         Me.TxtCounty.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCounty.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtCounty.Location = New System.Drawing.Point(116, 57)
+        Me.TxtCounty.Location = New System.Drawing.Point(115, 57)
         Me.TxtCounty.Name = "TxtCounty"
         Me.TxtCounty.Size = New System.Drawing.Size(13, 12)
         Me.TxtCounty.TabIndex = 65
@@ -351,7 +355,7 @@ Partial Class Printout
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label14.Location = New System.Drawing.Point(64, 57)
+        Me.Label14.Location = New System.Drawing.Point(63, 57)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(46, 12)
         Me.Label14.TabIndex = 64
@@ -363,7 +367,7 @@ Partial Class Printout
         Me.TxtTown.AutoSize = True
         Me.TxtTown.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtTown.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtTown.Location = New System.Drawing.Point(116, 43)
+        Me.TxtTown.Location = New System.Drawing.Point(115, 43)
         Me.TxtTown.Name = "TxtTown"
         Me.TxtTown.Size = New System.Drawing.Size(13, 14)
         Me.TxtTown.TabIndex = 63
@@ -375,7 +379,7 @@ Partial Class Printout
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label12.Location = New System.Drawing.Point(77, 43)
+        Me.Label12.Location = New System.Drawing.Point(76, 43)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(33, 13)
         Me.Label12.TabIndex = 62
@@ -387,7 +391,7 @@ Partial Class Printout
         Me.TxtAddress.AutoSize = True
         Me.TxtAddress.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtAddress.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtAddress.Location = New System.Drawing.Point(116, 32)
+        Me.TxtAddress.Location = New System.Drawing.Point(115, 32)
         Me.TxtAddress.Name = "TxtAddress"
         Me.TxtAddress.Size = New System.Drawing.Size(13, 11)
         Me.TxtAddress.TabIndex = 61
@@ -399,7 +403,7 @@ Partial Class Printout
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label10.Location = New System.Drawing.Point(62, 32)
+        Me.Label10.Location = New System.Drawing.Point(61, 32)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(48, 11)
         Me.Label10.TabIndex = 60
@@ -411,7 +415,7 @@ Partial Class Printout
         Me.TxtHouseNo.AutoSize = True
         Me.TxtHouseNo.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtHouseNo.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtHouseNo.Location = New System.Drawing.Point(116, 17)
+        Me.TxtHouseNo.Location = New System.Drawing.Point(115, 17)
         Me.TxtHouseNo.Name = "TxtHouseNo"
         Me.TxtHouseNo.Size = New System.Drawing.Size(13, 14)
         Me.TxtHouseNo.TabIndex = 59
@@ -423,7 +427,7 @@ Partial Class Printout
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label8.Location = New System.Drawing.Point(50, 17)
+        Me.Label8.Location = New System.Drawing.Point(49, 17)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(60, 13)
         Me.Label8.TabIndex = 58
@@ -435,7 +439,7 @@ Partial Class Printout
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label7.Location = New System.Drawing.Point(49, 1)
+        Me.Label7.Location = New System.Drawing.Point(48, 1)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 57
@@ -447,7 +451,7 @@ Partial Class Printout
         Me.TxtFullname.AutoSize = True
         Me.TxtFullname.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtFullname.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TxtFullname.Location = New System.Drawing.Point(116, 1)
+        Me.TxtFullname.Location = New System.Drawing.Point(115, 1)
         Me.TxtFullname.Name = "TxtFullname"
         Me.TxtFullname.Size = New System.Drawing.Size(13, 14)
         Me.TxtFullname.TabIndex = 56
@@ -472,7 +476,7 @@ Partial Class Printout
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.52294!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.LblPrcePrNght_, 4, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.LblCheckout_, 2, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.LblCheckin_, 1, 1)
@@ -501,10 +505,10 @@ Partial Class Printout
         Me.LblPrcePrNght_.BackColor = System.Drawing.Color.WhiteSmoke
         Me.LblPrcePrNght_.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPrcePrNght_.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblPrcePrNght_.Location = New System.Drawing.Point(471, 37)
+        Me.LblPrcePrNght_.Location = New System.Drawing.Point(468, 37)
         Me.LblPrcePrNght_.Margin = New System.Windows.Forms.Padding(0)
         Me.LblPrcePrNght_.Name = "LblPrcePrNght_"
-        Me.LblPrcePrNght_.Size = New System.Drawing.Size(129, 63)
+        Me.LblPrcePrNght_.Size = New System.Drawing.Size(132, 63)
         Me.LblPrcePrNght_.TabIndex = 61
         Me.LblPrcePrNght_.Text = "0"
         '
@@ -517,7 +521,7 @@ Partial Class Printout
         Me.LblCheckout_.BackColor = System.Drawing.Color.WhiteSmoke
         Me.LblCheckout_.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCheckout_.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblCheckout_.Location = New System.Drawing.Point(307, 37)
+        Me.LblCheckout_.Location = New System.Drawing.Point(304, 37)
         Me.LblCheckout_.Margin = New System.Windows.Forms.Padding(0)
         Me.LblCheckout_.Name = "LblCheckout_"
         Me.LblCheckout_.Size = New System.Drawing.Size(78, 63)
@@ -533,10 +537,10 @@ Partial Class Printout
         Me.LblCheckin_.BackColor = System.Drawing.Color.WhiteSmoke
         Me.LblCheckin_.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCheckin_.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblCheckin_.Location = New System.Drawing.Point(223, 37)
+        Me.LblCheckin_.Location = New System.Drawing.Point(221, 37)
         Me.LblCheckin_.Margin = New System.Windows.Forms.Padding(0)
         Me.LblCheckin_.Name = "LblCheckin_"
-        Me.LblCheckin_.Size = New System.Drawing.Size(84, 63)
+        Me.LblCheckin_.Size = New System.Drawing.Size(83, 63)
         Me.LblCheckin_.TabIndex = 59
         Me.LblCheckin_.Text = "0"
         '
@@ -552,7 +556,7 @@ Partial Class Printout
         Me.LblName_.Location = New System.Drawing.Point(0, 37)
         Me.LblName_.Margin = New System.Windows.Forms.Padding(0)
         Me.LblName_.Name = "LblName_"
-        Me.LblName_.Size = New System.Drawing.Size(223, 63)
+        Me.LblName_.Size = New System.Drawing.Size(221, 63)
         Me.LblName_.TabIndex = 55
         Me.LblName_.Text = "0"
         '
@@ -565,7 +569,7 @@ Partial Class Printout
         Me.LblCheckout.BackColor = System.Drawing.Color.Red
         Me.LblCheckout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCheckout.ForeColor = System.Drawing.Color.White
-        Me.LblCheckout.Location = New System.Drawing.Point(307, 0)
+        Me.LblCheckout.Location = New System.Drawing.Point(304, 0)
         Me.LblCheckout.Margin = New System.Windows.Forms.Padding(0)
         Me.LblCheckout.Name = "LblCheckout"
         Me.LblCheckout.Size = New System.Drawing.Size(78, 37)
@@ -582,10 +586,10 @@ Partial Class Printout
         Me.LblCheckin.BackColor = System.Drawing.Color.Red
         Me.LblCheckin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCheckin.ForeColor = System.Drawing.Color.White
-        Me.LblCheckin.Location = New System.Drawing.Point(223, 0)
+        Me.LblCheckin.Location = New System.Drawing.Point(221, 0)
         Me.LblCheckin.Margin = New System.Windows.Forms.Padding(0)
         Me.LblCheckin.Name = "LblCheckin"
-        Me.LblCheckin.Size = New System.Drawing.Size(84, 37)
+        Me.LblCheckin.Size = New System.Drawing.Size(83, 37)
         Me.LblCheckin.TabIndex = 56
         Me.LblCheckin.Text = "Checkin"
         Me.LblCheckin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -602,7 +606,7 @@ Partial Class Printout
         Me.LblFormName.Location = New System.Drawing.Point(0, 0)
         Me.LblFormName.Margin = New System.Windows.Forms.Padding(0)
         Me.LblFormName.Name = "LblFormName"
-        Me.LblFormName.Size = New System.Drawing.Size(223, 37)
+        Me.LblFormName.Size = New System.Drawing.Size(221, 37)
         Me.LblFormName.TabIndex = 55
         Me.LblFormName.Text = "Full name"
         Me.LblFormName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -616,10 +620,10 @@ Partial Class Printout
         Me.LblPrcePrNght.BackColor = System.Drawing.Color.Red
         Me.LblPrcePrNght.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPrcePrNght.ForeColor = System.Drawing.Color.White
-        Me.LblPrcePrNght.Location = New System.Drawing.Point(471, 0)
+        Me.LblPrcePrNght.Location = New System.Drawing.Point(468, 0)
         Me.LblPrcePrNght.Margin = New System.Windows.Forms.Padding(0)
         Me.LblPrcePrNght.Name = "LblPrcePrNght"
-        Me.LblPrcePrNght.Size = New System.Drawing.Size(129, 37)
+        Me.LblPrcePrNght.Size = New System.Drawing.Size(132, 37)
         Me.LblPrcePrNght.TabIndex = 58
         Me.LblPrcePrNght.Text = "Price Per Night"
         Me.LblPrcePrNght.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -633,7 +637,7 @@ Partial Class Printout
         Me.LblDays.BackColor = System.Drawing.Color.WhiteSmoke
         Me.LblDays.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDays.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LblDays.Location = New System.Drawing.Point(385, 37)
+        Me.LblDays.Location = New System.Drawing.Point(382, 37)
         Me.LblDays.Margin = New System.Windows.Forms.Padding(0)
         Me.LblDays.Name = "LblDays"
         Me.LblDays.Size = New System.Drawing.Size(86, 63)
@@ -649,7 +653,7 @@ Partial Class Printout
         Me.LblDaysAmount.BackColor = System.Drawing.Color.Red
         Me.LblDaysAmount.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDaysAmount.ForeColor = System.Drawing.Color.White
-        Me.LblDaysAmount.Location = New System.Drawing.Point(385, 0)
+        Me.LblDaysAmount.Location = New System.Drawing.Point(382, 0)
         Me.LblDaysAmount.Margin = New System.Windows.Forms.Padding(0)
         Me.LblDaysAmount.Name = "LblDaysAmount"
         Me.LblDaysAmount.Size = New System.Drawing.Size(86, 37)
@@ -1203,11 +1207,28 @@ Partial Class Printout
         Me.BtnPrint.Size = New System.Drawing.Size(75, 23)
         Me.BtnPrint.TabIndex = 522
         Me.BtnPrint.Text = "Print"
+        Me.ToolTip1.SetToolTip(Me.BtnPrint, "Click here to print the form.")
         Me.BtnPrint.UseVisualStyleBackColor = False
         '
         'PrintDialogPrintoutForm
         '
         Me.PrintDialogPrintoutForm.UseEXDialog = True
+        '
+        'PrintForm1
+        '
+        Me.PrintForm1.DocumentName = "document"
+        Me.PrintForm1.Form = Me
+        Me.PrintForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
+        Me.PrintForm1.PrinterSettings = CType(resources.GetObject("PrintForm1.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
+        Me.PrintForm1.PrintFileName = Nothing
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.AutoPopDelay = 0
+        Me.ToolTip1.InitialDelay = 500
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.ReshowDelay = 100
+        Me.ToolTip1.ShowAlways = True
         '
         'Printout
         '
@@ -1334,4 +1355,7 @@ Partial Class Printout
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BtnPrint As Button
     Friend WithEvents PrintDialogPrintoutForm As PrintDialog
+    Friend WithEvents PrintForm1 As PowerPacks.Printing.PrintForm
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

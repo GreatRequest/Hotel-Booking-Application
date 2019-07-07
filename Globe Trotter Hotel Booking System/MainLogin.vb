@@ -8,9 +8,27 @@
 
     Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
         '"Register" button
+        If TxtNEWUsername.Text.Length < 5 Then
+            MsgBox("At least 5 characters required")
+            LblNEWUsername.ForeColor = Color.Red
+        End If
+        If TxtNEWPassword.Text.Length < 5 Then
+            MsgBox("At least 8 characters required")
+            LblNEWPassword.ForeColor = Color.Red
+        End If
+
         If TxtNEWUsername.Text = "" Or TxtNEWPassword.Text = "" Then
             'If the user did not type their preferred username and password then...
             MsgBox("Please enter the password and username to register.")
+            LblNEWUsername.ForeColor = Color.Red
+            LblNEWPassword.ForeColor = Color.Red
+            ' lable new Username and Password should become red
+            LblWrongUP.Text = "No username or password entered!"
+            'Label Wrong Username, Password should show "No username or password!"
+            LblWrongUP.Visible = True
+            'Label Wrong Username, Password should become visible for user
+            LblWrongUP.ForeColor = Color.Red
+            'Label Wrong Username, Password should become red
         ElseIf TxtNEWRePassword.Text <> TxtNEWPassword.Text Then
             'If the user did not enter their password again correctly system would not allow the user to proceed.
             'Otherwise if password don’t much error is then shown
@@ -66,6 +84,9 @@
             'else if username and password are empty then...
             MsgBox("Please enter your username and password before login in")
             'Message box appears and says, "Please enter your username and password to login in"
+            LblUsername.ForeColor = Color.Red
+            LblPassword.ForeColor = Color.Red
+            ' lable Username and Password should become red
             LblWrongUP.Text = "No username or password!"
             'Label Wrong Username, Password should show "No username or password!"
             LblWrongUP.Visible = True
